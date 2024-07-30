@@ -1,0 +1,5 @@
+-- SQLBook: Code
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public'  -- You can adjust this condition based on your schema
+AND table_type = 'BASE TABLE';
