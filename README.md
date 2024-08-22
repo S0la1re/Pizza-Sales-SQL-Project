@@ -28,8 +28,7 @@ The data source: [link](https://www.kaggle.com/datasets/nextmillionaire/pizza-sa
 
 
 ## Database Design
-![image.png](attachment:image.png)
-
+![Database schema](image.png)
 
 
 ## Insights:
