@@ -1,14 +1,12 @@
 # Pizza-Sales-SQL-Project
 
-The goal of this project is to demonstrate knowledge of SQL by creating a database and executing SQL queries.<br>
 
-Project plan:
+## Project Overview
+This project aims to analyze pizza sales data to uncover key insights and provide actionable recommendations for improving business performance. The project involves: 
+- data cleaning,
+- database design,
+- performing Ad-hoc Analysis using various SQL queries to extract insights on pizza sales trends .
 
-1. Find data;
-2. Clean the data;
-3. Design the database schema;
-4. Create the database;
-5. Run SQL queries.
 
 ## About the Dataset
 This dataset contain detailed information about pizza orders, including specifics about the pizza variants, quantities, pricing, dates, times, and categorization details.
@@ -27,3 +25,11 @@ This dataset contain detailed information about pizza orders, including specific
 12. **pizza_name**: Specifies the name of the specific pizza variant ordered.
 
 The data source: [link](https://www.kaggle.com/datasets/nextmillionaire/pizza-sales-dataset)
+
+
+## Database Design
+![image.png](attachment:image.png)
+
+
+
+## Insights:
