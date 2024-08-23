@@ -71,9 +71,10 @@ The database was populated using Python scripts and environment variables stored
 
 #### Hourly sales:
 
-- Most Profitable Hours: The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice above the average revenue ($196,746).
+##### Most Profitable Hours: 
+The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice above the average revenue ($196,746).
 
-- Least Profitable Hours: 
+##### Least Profitable Hours: 
 1. 09:00 ($332 total revenue, 16 orders),
 2. 10:00 ($730 total revenue, 43 orders),
 3. 23:00 ($3121 total revenue, 190 orders),
