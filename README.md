@@ -38,7 +38,7 @@ The database schema was designed to organize the pizza sales data efficiently. T
 - **Order_Details**: Links orders to pizzas, capturing quantities, prices, and other order-specific details.
 
 ### Database Schema
-![Database schema](images\database_schema.png)
+![Database schema](images/database_schema.png)
 
 
 
@@ -83,7 +83,7 @@ The hours from 12:00 to 13:00 are the most profitable, with total revenue of $59
 3. 23:00 ($3121 total revenue, 190 orders),
 4. 22:00 ($59,375 total revenue, 3121 orders)
 
-- ![Hourly sales](images\hourly_sales_by_quantity.png)
+- ![Hourly sales](images/hourly_sales_by_quantity.png)
 
 #### Profitability by Day of the Week:
 
@@ -95,6 +95,9 @@ The hours from 12:00 to 13:00 are the most profitable, with total revenue of $59
 
 - **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081. Although no clear seasonality pattern was identified, more data is needed to draw definitive conclusions.
 
-![Profitability by Month](images\profitability_by_month.png)
+![Profitability by Month](images/profitability_by_month.png)
 
 ### Revenue by Pizza Category:
+
+Most Profitable Category: Classic pizzas are the most profitable, generating $220,053 in revenue and selling 14,888 units.
+Least Profitable Category: Chicken pizzas were the least profitable, generating $195,920 in revenue and selling 11,050 units.
