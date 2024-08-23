@@ -93,7 +93,8 @@ The hours from 12:00 to 13:00 are the most profitable, with total revenue of $59
 
 #### Profitability by Month:
 
-- **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081. Although no clear seasonality pattern was identified, more data is needed to draw definitive conclusions.
+- **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081. 
+- Although no clear seasonality pattern was identified, more data is needed to draw definitive conclusions.
 
 ![Profitability by Month](images/profitability_by_month.png)
 
