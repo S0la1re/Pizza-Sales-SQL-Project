@@ -76,8 +76,6 @@ The database was populated using Python scripts and environment variables stored
 1. 12:00 ($596,045 total revenue, 36,083 orders)
 2. 13:00 ($569,168 total revenue, 34,438 orders)
 
-The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice the average revenue ($196,746).
-
 **Least Profitable Hours**: 
 1. 09:00 ($332 total revenue, 16 orders)
 2. 10:00 ($730 total revenue, 43 orders)
@@ -89,6 +87,8 @@ The hours from 12:00 to 13:00 are the most profitable, with total revenue of $59
 #### Profitability by Day of the Week
 - **Most Profitable Days**: Friday (27,632 orders) and Thursday (27,016 orders) are the most profitable days of the week.
 - **Least Profitable Days**: Sunday (21,780 orders) and Monday (23,900 orders) generated the lowest revenue.
+
+![Quantity of Pizzas Sold by Day of the Week](images/quantity_of_pizzas_sold_by_day_of_the_week.png)
 
 #### Profitability by Month
 - **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081.
