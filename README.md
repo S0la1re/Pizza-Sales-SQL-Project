@@ -38,7 +38,7 @@ The database schema was designed to organize the pizza sales data efficiently. T
 - **Order_Details**: Links orders to pizzas, capturing quantities, prices, and other order-specific details.
 
 ### Database Schema
-![Database schema](image.png)
+![Database schema](images\database_schema.png)
 
 
 
@@ -71,7 +71,11 @@ The database was populated using Python scripts and environment variables stored
 
 #### Hourly sales:
 
-**Most Profitable Hours**: The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice above the average revenue ($196,746).
+**Most Profitable Hours**: 
+1. 12:00 ($596,045 total revenue, 36,083 orders),
+2. 13:00 ($569,168 total revenue, 34,438 orders),
+
+The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice above the average revenue ($196,746).
 
 **Least Profitable Hours**: 
 1. 09:00 ($332 total revenue, 16 orders),
@@ -79,7 +83,7 @@ The database was populated using Python scripts and environment variables stored
 3. 23:00 ($3121 total revenue, 190 orders),
 4. 22:00 ($59,375 total revenue, 3121 orders)
 
-- ![Hourly sales](image-2.png)
+- ![Hourly sales](images\hourly_sales_by_quantity.png)
 
 #### Profitability by Day of the Week:
 
@@ -91,6 +95,6 @@ The database was populated using Python scripts and environment variables stored
 
 - **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081. Although no clear seasonality pattern was identified, more data is needed to draw definitive conclusions.
 
-![Profitability by Month](image-1.png)
+![Profitability by Month](images\profitability_by_month.png)
 
 ### Revenue by Pizza Category:
