@@ -71,10 +71,9 @@ The database was populated using Python scripts and environment variables stored
 
 #### Hourly sales:
 
-##### Most Profitable Hours: 
-The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice above the average revenue ($196,746).
+**Most Profitable Hours**: The hours from 12:00 to 13:00 are the most profitable, with total revenue of $596,045 and $569,168 respectively, which is more than twice above the average revenue ($196,746).
 
-##### Least Profitable Hours: 
+**Least Profitable Hours**: 
 1. 09:00 ($332 total revenue, 16 orders),
 2. 10:00 ($730 total revenue, 43 orders),
 3. 23:00 ($3121 total revenue, 190 orders),
@@ -84,12 +83,13 @@ The hours from 12:00 to 13:00 are the most profitable, with total revenue of $59
 
 #### Profitability by Day of the Week:
 
-- Most Profitable Days: Friday (27,632 orders) and Thursday (27,016 orders) are the most profitable days of the week.
-- Least Profitable Days: Sunday (21,780 orders) and Monday (23,900 orders) showed the lowest revenue.
+- **Most Profitable Days**: Friday (27,632 orders) and Thursday (27,016 orders) are the most profitable days of the week.
+
+- **Least Profitable Days**: Sunday (21,780 orders) and Monday (23,900 orders) showed the lowest revenue.
 
 #### Profitability by Month:
 
-Least Profitable Months: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081. Although no clear seasonality pattern was identified, more data is needed to draw definitive conclusions.
+- **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081. Although no clear seasonality pattern was identified, more data is needed to draw definitive conclusions.
 
 ![Profitability by Month](image-1.png)
 
