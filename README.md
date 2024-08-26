@@ -1,4 +1,4 @@
-# Pizza-Sales-SQL-Project
+# Pizza Sales Analysis | SQL Project
 
 
 
