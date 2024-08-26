@@ -115,11 +115,20 @@ The database was populated using Python scripts and environment variables stored
 
 ## Recommendations
 
-1. Focus on Popular Pizzas:
+### Focus on Popular Pizzas:
 - Increase marketing and promotion efforts for the top-selling pizzas, such as The Classic Deluxe Pizza and The Barbecue Chicken Pizza, to maintain high demand and boost revenue.
 
-1. Optimize Operations During Peak Hours:
+### Optimize Operations During Peak Hours:
 - Ensure sufficient stock and staffing during peak hours from 12:00 PM to 1:00 PM to maximize revenue. Consider offering special promotions during these hours to further increase sales.
 
-1. Develop Strategies to deal with Less Profitable Hours:
-- 
+### Develop Strategies to deal with Less Profitable Hours:
+
+
+
+
+
+### Encourage Sales on Less Profitable Days of the Week:
+- Consider introducing special offers or promotions on Sundays and Mondays to stimulate sales on these less profitable days.
+
+### Reevaluate Strategies by Month:
+- Since certain months have shown below-average revenue, it may be beneficial to introduce seasonal promotions or new product offerings during these periods to boost sales.
