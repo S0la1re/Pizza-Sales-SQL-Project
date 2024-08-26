@@ -118,17 +118,38 @@ The database was populated using Python scripts and environment variables stored
 ### Focus on Popular Pizzas:
 - Increase marketing and promotion efforts for the top-selling pizzas, such as The Classic Deluxe Pizza and The Barbecue Chicken Pizza, to maintain high demand and boost revenue.
 
+
 ### Optimize Operations During Peak Hours:
 - Ensure sufficient stock and staffing during peak hours from 12:00 PM to 1:00 PM to maximize revenue. Consider offering special promotions during these hours to further increase sales.
 
-### Develop Strategies to deal with Less Profitable Hours:
 
+### Less Profitable Hours
 
+#### Analysis of Low Sales Hours:
+- The sales during the hours of 22:00, 09:00, 10:00, and 23:00 are significantly lower compared to peak hours. For instance, the revenue at 09:00 was just $332, at 10:00 it was $730, and at 23:00 it was $3,121 for the entire year.
+- However, we lack data on staffing levels and employee wages, which would be necessary for a more in-depth analysis of operational efficiency during these low-sales periods.
 
+#### Recommendation 1: Optimize Staffing:
+- If the staffing levels during these low-sales hours are the same as during peak hours (12:00, 13:00), it might be worth considering adjusting the number of staff to better align with the reduced demand. This could help reduce operational costs while maintaining service quality.
+
+#### Recommendation 2: Consider Reducing Operating Hours:
+- Another option is to reduce operating hours by closing the store during 09:00, 10:00, and 23:00. The sales during these times are minimal and likely do not justify the cost of keeping the store open.
+- For example, total sales at 09:00 brought in $332, at 10:00 $730, and at 23:00 $3,121 over the course of the year. It is likely that the labor costs during these times exceed the profits generated.
+- Closing during these hours could also be presented positively to staff as an effort to improve work-life balance, allowing employees to start later or finish earlier.
+
+#### Additional Observation:
+- It's reasonable to infer that the low sales during these times are due to the time of day rather than a recent change in operating hours. The data shows consistent orders at 23:00 and 10:00 throughout the year, suggesting that the store has been open during these times for a significant period.
+- The exception is 09:00, where only one large order was recorded in the eleventh month (16 pizzas in a single order). The average order size is typically around 2 pizzas (2.32, to be precise).
+![Total Quantity by Month for Scecific Hours of the Day](images/total_quantity_by_month.png)
 
 
 ### Encourage Sales on Less Profitable Days of the Week:
 - Consider introducing special offers or promotions on Sundays and Mondays to stimulate sales on these less profitable days.
 
+
 ### Reevaluate Strategies by Month:
 - Since certain months have shown below-average revenue, it may be beneficial to introduce seasonal promotions or new product offerings during these periods to boost sales.
+
+
+### Focus on Popular Pizza Sizes:
+- Continue to offer a wide range of Large (L) and Medium (M) pizzas as they generate the most revenue.
