@@ -141,7 +141,7 @@ The database was populated using Python scripts and environment variables stored
 #### Additional Observation:
 - It's reasonable to infer that the low sales during these times are due to the time of day rather than a recent change in operating hours. The data shows consistent orders at 23:00 and 10:00 throughout the year, suggesting that the store has been open during these times for a significant period.
 - The exception is 09:00, where only one large order was recorded in the eleventh month (16 pizzas in a single order). The average order size is typically around 2 pizzas (2.32, to be precise).
-![Total Quantity by Month for Scecific Hours of the Day](images/total_quantity_by_month.png)
+- ![Total Quantity by Month for Scecific Hours of the Day](images/total_quantity_by_month.png)
 
 
 ### Encourage Sales on Less Profitable Days of the Week:
