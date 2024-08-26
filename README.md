@@ -94,18 +94,23 @@ The database was populated using Python scripts and environment variables stored
 - **Least Profitable Months**: May, October, February, December, and September were below average in revenue, with revenues ranging from $229,575 to $239,081.
 - Although no clear seasonal pattern was identified, more data is needed to draw definitive conclusions.
 
-![Profitability by Month](images/profitability_by_month.png)
+![Profitability by Month](images/Total_Quantity_of_Pizzas_Sold_by_Month.png)
 
 
 ### Profitability by Pizza Category
 - **Most Popular Category**: Classic pizzas are the most popular, generating $220,053 in revenue and selling 14,888 units.
 - **Least Popular Category**: Chicken pizzas were the least popular, generating $195,920 in revenue from 11,050 units sold.
 
+![Total Quantity by Pizza Category](images/Total_Quantity_by_Pizza_Category.png)
+![Total Revenue by Pizza Category](images/Tota_Revenue_by_Pizza_Category.png)
+
 
 ### Profitability by Pizza Size
 - **Most Popular Sizes**: Large (L) and Medium (M) pizzas generated the highest revenue, with $375,319 and $249,382 respectively.
 - **Least Popular Sizes**: Extra Large (XL) and Extra Extra Large (XXL) pizzas generated the lowest revenue, with minimal sales and revenues of $14,076 and $1,007 respectively.
 
+![Total Quantity by Pizza Size](images/Total_Quantity_of_Pizzas_Sold_by_Size.png)
+![Total Revenue by Pizza Size](images/Total_Revenue_by_Pizza_Size.png)
 
 
 ## Recommendations
