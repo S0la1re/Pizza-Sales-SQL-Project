@@ -1,6 +1,15 @@
 # Pizza Sales Analysis | SQL Project
 
 
+## Table of Contents
+1. [Project Overview](#Project-Overview)
+2. [About the Dataset](#About-the-Dataset)
+3. [Database Design](#Database-Design)
+4. [Data Population](#Data-Population)
+5. [Insights](#Insights)
+6. [Recommendations](#Recommendations)
+
+
 
 ## Project Overview
 This project aims to analyze pizza sales data to uncover key insights and provide actionable recommendations for improving business performance. The project involves: 
