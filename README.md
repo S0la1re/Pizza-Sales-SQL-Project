@@ -6,7 +6,7 @@
 This project aims to analyze pizza sales data to uncover key insights and provide actionable recommendations for improving business performance. The project involves: 
 - Data cleaning;
 - Database design;
-- Performing ad-hoc analysis using SQL queries to extract insights into pizza sales trends;
+- Performing ad-hoc analysis using SQL queries to extract insights on pizza sales trends;
 - Provide insights and recommendations.
 
 
