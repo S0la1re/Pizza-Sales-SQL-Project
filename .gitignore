@@ -1,2 +1,7 @@
 .vscode/
 .env
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+pizza_sales.db
