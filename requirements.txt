@@ -1,0 +1,4 @@
+pandas>=2.0
+matplotlib>=3.7
+ipykernel>=6.0
+notebook>=7.0
