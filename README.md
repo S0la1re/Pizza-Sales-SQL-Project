@@ -32,8 +32,9 @@ revenue. Raw CSV → cleaned → SQLite → SQL analysis → charts, reproducibl
   1.8%. Meanwhile the four menu categories sit within 3.2 percentage points of each other.
 - **Sunday is the weak day, Friday the strong one.** Sunday runs 15.1% below the weekly average,
   Friday 16.5% above.
-- **There is no seasonality to plan around.** Every month of 2015 lands within ±6% of the
-  monthly average.
+- **October is the best month, not the worst.** Its total is dragged down by four missing Mondays;
+  per trading day it ranks first of twelve. Corrected for coverage, no month stands out — there is
+  no seasonality to plan around.
 
 Each of these turns into a concrete action in [Recommendations](#recommendations); the evidence
 behind them is in [Insights](#insights).
@@ -270,16 +271,24 @@ trading day as well.
 
 ![Revenue by month](image/monthly_revenue.png)
 
-Revenue is flat: every month lands between **\$64,028** and **\$72,558** against an average of
-**\$68,155**, a spread of about ±6%. July and May are the strongest; October, September and
-December the weakest.
+Revenue looks flat: every month lands between **\$64,028** and **\$72,558** against an average of
+**\$68,155**, a spread of about ±6%.
 
-October and September are partly explained by the seven missing days rather than by demand.
-December's dip is genuine, and 25 December is the one day in the dataset that looks like a
-deliberate closure.
+Those totals are misleading. Three months traded on fewer days than the calendar allows, and they
+are exactly the three lowest-revenue months. Correcting for it reverses the bottom of the table:
 
-**There is no usable seasonal signal here** — a ±6% band across a single year is not something to
-plan against.
+| Month | Trading days | Revenue, $ | Rank by total | Revenue per trading day, $ | Rank per trading day |
+|---|---:|---:|---:|---:|---:|
+| October | 27 | 64,028 | 12 | 2,371 | **1** |
+| September | 28 | 64,180 | 11 | 2,292 | 6 |
+| December | 30 | 64,701 | 10 | 2,157 | **12** |
+
+**October was the strongest month of 2015, not the weakest** — all four of its Mondays are absent
+from the data. September moves to mid-table. Only December is weak on both measures, and 25
+December is the one missing day that reads as a deliberate closure.
+
+**There is still no usable seasonal signal.** Per trading day the twelve months span \$2,157 to
+\$2,371 — under 10%, with no shape to it, on a single year of data.
 
 ### Category and Size
 
@@ -357,10 +366,16 @@ It also carries five ingredients that appear on no other pizza (brie carre chees
 caramelised onions, pears, thyme), so it holds dedicated inventory for the slowest-moving dish.
 Either test it at a price closer to its peers, or remove it and free that inventory.
 
-### 6. Do not build a seasonal calendar yet
+### 6. Do not act on the monthly totals, and do not build a seasonal calendar yet
 
-Monthly revenue varies by ±6% with no discernible pattern, and part of that spread is missing days
-rather than demand. A seasonal campaign calendar needs at least two more years of data.
+The monthly totals do not mean what they look like. October reads as the worst month of the year
+and is in fact the best per trading day — the gap is four missing Mondays, not demand. **A
+promotion aimed at the weakest month would have been aimed at the strongest one.**
+
+Once coverage is accounted for, the twelve months span under 10% per trading day with no shape to
+them. December is the only month whose weakness survives the correction, and one year is not
+enough to say whether that repeats. A seasonal campaign calendar needs at least two more years of
+data.
 
 ## Limitations
 
@@ -377,7 +392,7 @@ rather than demand. A seasonal campaign calendar needs at least two more years o
 
 ```
 data/pizza_sales.csv     raw dataset (48,620 line items)
-main.ipynb               cleaning, schema, loading, integrity checks, SQL analysis
+main.ipynb               profiling, cleaning, schema, loading, integrity checks, SQL analysis
 visualisations.ipynb     charts, built from the database
 image/                   generated charts
 pizza_sales.db           SQLite database (not tracked; built by main.ipynb)
