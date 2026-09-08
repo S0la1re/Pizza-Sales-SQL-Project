@@ -30,8 +30,9 @@ revenue. Raw CSV → cleaned → SQLite → SQL analysis → charts, reproducibl
   year** — 0.18% of revenue. At 09:00 the shop took exactly one order in twelve months.
 - **Size matters more than recipe.** S, M and L are **98.2%** of revenue; XL and XXL together are
   1.8%. Meanwhile the four menu categories sit within 3.2 percentage points of each other.
-- **Sunday is the weak day, Friday the strong one.** Sunday runs 15.1% below the weekly average,
-  Friday 16.5% above.
+- **Sunday is the weak day, Friday the strong one.** Per trading day Sunday runs 16.5% below
+  average and Friday 19.1% above. (On raw totals the gap looks smaller — those understate Friday,
+  which traded 50 days rather than 52.)
 - **October is the best month, not the worst.** Its total is dragged down by four missing Mondays;
   per trading day it ranks first of twelve. Corrected for coverage, no month stands out — there is
   no seasonality to plan around.
@@ -221,7 +222,12 @@ recorded. The analysis reports revenue per trading day alongside the totals for 
 | 4 | The Pepperoni | 2,418 | The Spinach Supreme | 950 |
 | 5 | The Thai Chicken | 2,371 | The Soppressata | 961 |
 
-The Brie Carre is the outlier: it sells about half as much as the next-worst pizza. A narrow
+**The left column is a ranking without a winner.** First to fifth spans 82 units — 3.3% — and
+sixth place, The California Chicken at 2,370, sits one unit behind fifth. Read the top of the menu
+as a single leading group; the order inside it is noise, and so is the cut at five.
+
+The right column is different. The Brie Carre is a genuine outlier: it sells about half as much as
+the next-worst pizza. A narrow
 listing is not the explanation — it is one of three items sold in a single size, and the other two
 (The Big Meat, S only; The Five Cheese, L only) move 1,914 and 1,409 units. Price is the more
 likely cause: the cheapest size it can be bought in costs \$23.65, against a menu-wide average
@@ -235,8 +241,9 @@ Trade is concentrated in two peaks:
 
 - **Lunch, 12:00–13:00** — \$217,944, **26.6%** of annual revenue from two hours a day.
 - **Dinner, 17:00–19:00** — \$248,163, **30.3%**.
-- **09:00, 10:00 and 23:00 combined** — \$1,508 for the entire year, **0.18%** of revenue and
-  roughly 108× below the average hour.
+- **09:00, 10:00 and 23:00 combined** — \$1,508 for the entire year, **0.18%** of revenue.
+  Measured against the twelve hours that genuinely trade (\$68,029 each on average), that is about
+  **135×** below a normal hour.
 
 09:00 is not so much a slow hour as a rounding error. Across the whole year it contains **exactly
 one order**: #19176, placed at 09:52 on 2015-11-24, four pizzas for \$83.
@@ -260,16 +267,17 @@ one order**: #19176, placed at 09:52 on 2015-11-24, four pizzas for \$83.
 
 ![Revenue per trading day by day of week](image/weekly_revenue_per_day.png)
 
-Friday is the clear best day, **16.5%** above the weekly average.
+Friday is the clear best day: **19.1%** above average per trading day. On totals it reads as
+16.5%, but Friday traded 50 days rather than 52, so the totals understate it.
 
 Monday ranks second-worst on total revenue, but it traded on four fewer days than the rest of the
 week (see [Data Quality](#data-quality)); measured per trading day it sits mid-table, in fourth.
-**Sunday is the only genuinely weak day** — 15.1% below average on totals, and last on revenue per
-trading day as well.
+**Sunday is the only genuinely weak day** — **16.5%** below average per trading day (15.1% on
+totals), and last on both measures.
 
 ### Sales by Month
 
-![Revenue by month](image/monthly_revenue.png)
+![Revenue per trading day by month](image/monthly_revenue_per_day.png)
 
 Revenue looks flat: every month lands between **\$64,028** and **\$72,558** against an average of
 **\$68,155**, a spread of about ±6%.
@@ -287,8 +295,9 @@ are exactly the three lowest-revenue months. Correcting for it reverses the bott
 from the data. September moves to mid-table. Only December is weak on both measures, and 25
 December is the one missing day that reads as a deliberate closure.
 
-**There is still no usable seasonal signal.** Per trading day the twelve months span \$2,157 to
-\$2,371 — under 10%, with no shape to it, on a single year of data.
+**There is still no usable seasonal signal** — and correcting for coverage makes the year look
+flatter, not lumpier. Peak to trough the totals span **12.5%**; per trading day, **9.4%**. Twelve
+months of a single year inside a 9% band is not something to plan against.
 
 ### Category and Size
 
@@ -351,7 +360,8 @@ XXL sold 28 units all year (\$1,007) and exists on a single pizza. It costs menu
 training and inventory for 0.1% of revenue. XL is only marginally better at 1.7%.
 
 The alternative reading is that both sizes are offered on one pizza only and so never had a fair
-test. If the intent is to keep large formats, extend XL to the top five sellers and measure again;
+test. If the intent is to keep large formats, extend XL across the leading group — the six best
+sellers sit within 3.4% of each other, so there is no reason to stop at five — and measure again;
 if not, remove both and simplify the menu.
 
 ### 5. Re-price The Brie Carre, or drop it
@@ -392,7 +402,8 @@ data.
 
 ```
 data/pizza_sales.csv     raw dataset (48,620 line items)
-main.ipynb               profiling, cleaning, schema, loading, integrity checks, SQL analysis
+main.ipynb               profiling, cleaning, schema, loading, integrity checks, SQL analysis,
+                         investigation, insights
 visualisations.ipynb     charts, built from the database
 image/                   generated charts
 pizza_sales.db           SQLite database (not tracked; built by main.ipynb)
@@ -408,6 +419,21 @@ Then run `main.ipynb` top to bottom — it builds `pizza_sales.db` from the CSV 
 
 The only dependencies are pandas, matplotlib and Jupyter. SQLite ships with Python, so there is no
 server to install and no credentials to configure.
+
+`visualisations.ipynb` writes thirteen charts to `image/`. This README embeds the five that carry
+an argument; the rest are the companion views:
+
+| Dimension | Revenue | Units | Corrected for coverage |
+|---|---|---|---|
+| Hour of day | `hourly_revenue` | `hourly_quantity` | — |
+| Day of week | `weekly_revenue` | `weekly_quantity` | `weekly_revenue_per_day` |
+| Month | `monthly_revenue` | `monthly_quantity` | `monthly_revenue_per_day` |
+| Category | `pizza_category_revenue` | `pizza_category_quantity` | — |
+| Size | `pizza_size_revenue` | `pizza_size_quantity` | — |
+| Quiet hours | — | `quiet_hours_by_month` | — |
+
+Where a "corrected" chart exists, it is the one to read: trading days are not evenly distributed
+across weekdays or months, so the revenue totals are biased against whichever period lost days.
 
 **Re-running is safe.** `main.ipynb` is idempotent: the schema cell drops and recreates the three
 tables, and the load cell clears them before inserting. Running the notebook again over an
