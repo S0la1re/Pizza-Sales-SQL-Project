@@ -334,15 +334,16 @@ capacity should be planned around those windows first; everything else is a seco
 Combo and pre-order offers work best aimed just *before* each peak (11:00 and 16:00), to flatten
 the load rather than add to it.
 
-### 2. Trim the opening hours at both ends
+### 2. Re-staff or trim the opening hours at both ends
 
 09:00, 10:00 and 23:00 generate \$1,508 a year between them — 0.18% of revenue, below the cost of
 having anyone in the building. Opening at 11:00 and closing at 22:00 would give up that 0.18% and
-remove roughly three staffed hours a day.
+remove roughly three staffed hours a day. The lighter version of the same move is to keep the
+doors open and shift staffing off those hours towards the peaks instead.
 
 The caveat: this dataset has no cost, staffing or wage data, so the argument rests on revenue
-alone. It is strong enough to justify a trial — close those hours for a quarter and check whether
-the demand shifts to 11:00 or simply disappears.
+alone. It is strong enough to justify a trial — re-staff or close those hours for a quarter
+and check whether the demand shifts to 11:00 or simply disappears.
 
 ### 3. Target Sunday, the weakest trading day
 
